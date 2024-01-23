@@ -1,0 +1,877 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+
+    --text-color-titles:hsl(204, 25%, 12%);
+    --text-color-content:hsl(212, 26%, 29%);
+    --features-text-titles: hsl(209, 100%, 50%);
+    --features-text-content: hsl(204, 25%, 12%);
+
+
+   
+ 
+    /*
+    --hue: 176;
+    --primary-color: hsl(var(--hue), 100%, 26%);
+    --headline: hsl(210, 11%, 15%);
+    --paragraph: hsl(210, 9%, 31%);
+  
+    --brand-beige: hsl(39, 100%, 97%);
+    --brand-light: hsl(calc(var(--hue) - 22), 23%, 89%);
+    --brand-light-2: hsl(calc(var(--hue) + 10), 14%, 97%);
+    --brand-dark: hsl(var(--hue), 100%, 14%);
+  
+    --bg-light: hsl(180, 14%, 97%);
+    */
+}
+body{
+    width: 400px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    padding: 2rem;
+
+    /*background-color: antiquewhite;*/
+}
+/* ==========navigation=========== */
+nav{
+    display: flex;
+    width: 39rem;
+    padding: 1.6rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .loginAndMenu{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem 2rem;
+}
+
+/* ========== hero ==========*/
+.hero{
+    width: 39rem;
+    height: 84.4rem;
+    
+
+    background-image:linear-gradient(
+        0deg,    
+        #50CFFA 0%,
+        #738FF2 5%,
+        #F42A9A 30%,
+        #fff 55%
+    );
+}
+
+header{
+    display: flex;
+    width: 35rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+header h1 {
+    color: var(--text-color-titles);
+    text-align: center;
+    
+    font-family: Inter;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4rem;
+}
+
+header p{
+    color: var(--text-color-content);
+
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+button{
+    border: none;
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+
+button:hover{
+cursor: pointer;
+filter: brightness(1.3);
+}
+
+.hero .buttons{
+    display: flex;
+    padding: 1.6rem 3.2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero .buttons .test{
+    background-color: hsl(248, 83%, 54%);
+    border-radius: 0.4rem;
+
+    display: flex;
+    padding: 1.6rem 3.2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    color: white;
+}
+
+.hero .buttons .prices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+
+    color: hsl(248, 83%, 54%);
+    background: none;
+}
+
+.hero .logos{
+    display: flex;
+    width: 35rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.hero .logos p{
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: white;
+}
+
+.hero .logos .companies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    align-self: stretch;
+    align-items: center;
+    align-content: center;
+    gap: 0.4rem 3.2rem;
+}
+
+/*========== features ========== */
+.features{
+    display: flex;
+    padding-top:5.6rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5.6rem;
+    width: 39rem;
+}
+
+.features .featureone{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    align-items: flex-start;
+    gap: 2.4rem;
+}
+
+.features .featureone header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    align-self: stretch;
+}
+
+.features .featureone header h3{
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem;
+    color: var(--features-text-titles);
+}
+
+.features .featureone header h2{
+    font-family: Inter;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.6rem;
+    color: var(--features-text-content);
+}
+
+.features .featureone p{
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--text-color-content);
+    text-align: justify;
+}
+
+.features .featureone ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    align-self: stretch;
+
+    color: var(--features-text-content);
+    list-style-type: none;
+}
+
+.features .featureone ul li{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.6rem;
+    align-self: stretch;
+}
+
+.features .featureone .learnMore{
+    display: flex;
+    padding: 0.8rem 0rem;
+    justify-content:  center;
+    align-items: center;
+    gap: 1.2rem;
+    color: var(--features-text-titles);
+    background-color: none;
+}
+
+.features .featureTwo{
+    display: flex;
+    width: 35rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.4rem;
+}
+
+.features .featureTwo header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    align-self: stretch;
+}
+
+.features .featureTwo header h3{
+    color: #00A424;
+
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+
+.features .featureTwo header h2{
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.6rem;
+
+    color: var(--features-text-content);
+}
+
+.features .featureTwo ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    align-self: stretch;
+
+    color: var(--features-text-content);
+    list-style-type: none;
+}
+
+.features .featureTwo ul li{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.6rem;
+    align-self: stretch;
+}
+
+.features .featureTwo .learnMore{
+    display: flex;
+    padding: 0.8rem 0rem;
+    justify-content:  center;
+    align-items: center;
+    gap: 1.2rem;
+    color: var(--features-text-titles);
+    background-color: none;
+
+    color: #00A424;
+}
+
+.features .featureThree{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35rem;
+    gap: 2.4rem;
+}
+
+.features .featureThree header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    align-self: stretch;
+}
+
+.features .featureThree header h3{
+    color: #eb2891;
+
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+
+.features .featureThree header h2{
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.6rem;
+
+    color: var(--features-text-content);
+}
+
+.features .featureThree .growthMonitorIMG image{
+    border-radius: 4rem;
+}
+
+.features .featureThree p{
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--features-text-content);
+}
+
+.features .featureThree .statistics{
+    display: flex;
+    padding-top: 1.6rem;
+    align-items: flex-start;
+    gap: 2.4rem;
+    align-self: stretch;
+}
+
+.features .featureThree .statistics .firstbox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    flex: 1 0 0;
+}
+
+.features .featureThree .statistics .firstbox span{
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.6rem;
+    color: var(--features-text-content);
+}
+
+.features .featureThree .statistics .firstbox p{
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--text-color-content);
+}
+
+.features .featureThree .statistics .secondbox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    flex: 1 0 0;
+}
+
+.features .featureThree .statistics .secondbox span{
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.6rem;
+    color: var(--features-text-content);
+}
+
+.features .featureThree .statistics .secondbox p{
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--text-color-content);
+}
+
+.features .featureThree .learnMore{
+    display: flex;
+    padding: 0.8rem 0rem;
+    justify-content:  center;
+    align-items: center;
+    gap: 1.2rem;
+    color: var(--features-text-titles);
+    background-color: none;
+
+    color: hsla(328, 83%, 54%, 1);
+}
+
+/* ========== FAQs ==========*/
+.FAQs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 39rem;
+    padding-top: 4.8rem;
+    gap: 2.4rem;
+}
+
+.FAQs header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+    align-self: stretch;
+}
+
+.FAQs header h1{
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.2rem;
+    color: hsl(328, 83%, 54%)
+}
+
+.FAQs header h2{
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.6rem;
+
+    color: var(--text-color-content);
+}
+
+.FAQs header p{
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--text-color-content)
+}
+
+.FAQs .questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    align-self: stretch;
+}
+
+.FAQs .questions .Qcard_open{
+    display: flex;
+    padding: 1.6rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    align-self: stretch;
+
+    border-radius: 0.8rem;
+    background: #d8cae5;
+}
+
+.FAQs .questions .Qcard_open .question{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    color: var(--features-text-content);
+}
+
+.FAQs .questions .Qcard_open .question p{
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem;
+
+    color: var(--features-text-content);
+}
+
+.FAQs .questions .Qcard_open .answer {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+
+    color: var(--text-color-content);
+}
+
+.FAQs .questions .Qcard_close .question{
+    display: flex;
+    padding: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    align-self: stretch;
+
+    border-radius: 0.8rem;
+}
+
+.FAQs .questions .Qcard_close .question p{
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem;
+
+    color: var(--features-text-content);
+}
+
+.FAQs .questions .Qcard_close .answer {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    padding: 1.6rem;
+
+    color: var(--text-color-content);
+
+    display: none;
+}
+
+/* ========== Plans ========== */
+
+.Plans{
+    display: flex;
+    width: 39rem;
+    padding: 4.8rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.Plans header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    align-self: stretch;
+}
+
+.Plans header h1{
+    text-align: center;
+
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.6rem;
+
+    color: var(--text-color-titles);
+}
+
+.Plans header p {
+    color: var(--text-color-content);
+
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+.Plans .Plans_prices{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.4rem;
+    align-self: stretch;
+}
+
+.Plans .Plans_prices .freeTrial, .business, .enterprise {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    padding: 2.4rem;
+    gap: 1.6rem;
+
+    border-radius: 0.8rem;
+    background: #d8cae5;
+}
+
+.Plans .Plans_prices .name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    align-self: stretch;
+}
+
+.Plans .Plans_prices .name h1{
+    color: hsl(248, 83%, 54%);
+
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+
+.Plans .Plans_prices .name p{
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+
+    align-self: stretch;
+
+    color: var(--text-color-content);
+}
+
+.Plans .Plans_prices .pricing{
+    display: flex;
+    align-items: flex-start;
+    gap: 0.2rem;
+    align-self: stretch;
+}
+
+.Plans .Plans_prices .pricing span{
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.6rem;
+    color: hsla(213, 22%, 48%, 1);
+}
+
+.Plans .Plans_prices .pricing .num{
+    color: var(--features-text-content);
+}
+
+
+.Plans .Plans_prices .checklist{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    align-self: stretch;
+
+    list-style: none;
+}
+
+.Plans .Plans_prices .checklist li{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    align-self: stretch;
+
+    color: var(--text-color-content);
+}
+
+.Plans .Plans_prices .starTrial, .getStarted{
+    background: #fff;
+    border-radius: 0.4rem;
+
+    display: flex;
+    padding: 1.4rem 3rem;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    gap: 1rem;
+
+    color:hsla(248, 83%, 54%, 1);
+}
+
+.Plans .Plans_prices .business{
+    background-color: #4328eb;
+}
+
+.Plans .Plans_prices .business .name h1{
+    color: #fff;
+}
+.Plans .Plans_prices .business .name p{
+    color: #fff;
+}
+
+.Plans .Plans_prices .business .num{
+    color: #fff;
+}
+
+.Plans .Plans_prices .business span{
+    color: #fff;
+}
+
+.Plans .Plans_prices .business .checklist li{
+    color: #fff;
+}
+
+/* =========== CTA ========== */
+.CTA{
+    width: 39rem;
+    padding: 0 2rem;
+}
+
+.CTA .wrapper{
+    background-image:linear-gradient(
+        45deg,
+        #50CFFA -100%,
+        #738FF2 0%,
+        #F42A9A 50%,
+        #FF6039 95%
+    );
+    
+    border-radius: 1.6rem;
+
+    width: 35rem;
+    height: 41.8rem;
+
+    padding-top: 4.8rem;
+}
+
+.CTA header h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.CTA header h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+
+    width: 17.875rem;
+}
+
+.CTA .CTA_buttons{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 5rem 11rem;
+}
+
+.CTA .CTA_buttons .test{
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.25rem;
+    background: #FFF;
+
+    color: #EB2891;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.CTA .CTA_buttons .sales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    background: none;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+/* ========== Footer ========== */
+footer{
+    display: flex;
+    width: 39rem;
+    padding: 8rem 2rem 4rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5.6rem;
+}
+
+footer .logoAndMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5.6rem;
+    align-self: stretch;
+}
+
+footer .logoAndMenu .footer_logo{
+    display: flex;
+    width: 13.8rem;
+    height: 3.5rem;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--text-color-content);
+}
+
+footer .loginAndMenu .footer_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.2rem;
+    align-self: stretch;
+
+    color: var(--text-color-content);
+}
+
+footer .logoAndMenu .footer_menu .footer_menu_itens{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    width: 35rem;
+}
+
+footer .copyrightAndSocials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    align-self: stretch;
+
+    color: var(--text-color-content);
+}
+
+
+
+footer .copyrightAndSocials span{
+    color: var(--text-color-content);
+    
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.2rem;
+}
+
+footer .copyrightAndSocials .socials{
+    display: flex;
+    align-items: flex-start;
+    gap: 5.6rem;
+}
