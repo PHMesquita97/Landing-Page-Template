@@ -14,6 +14,8 @@
     <title>Landin Page Tamplate</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="media-query.css">
+
+    <script src="./scripts.js"></script>
     
 </head>
 <body>
@@ -267,7 +269,7 @@
                         <p>
                             Ut enim ad minima veniam, quis nostrum exercitationem ullam?
                         </p>
-                        <img src="./assets/icons/Minus.svg" alt="sinal de menos">    
+                        <img src="./assets/icons/Plus.svg" alt="sinal de menos" onclick="toggleAnswer(this)" >    
                     </div>
                     
                     <div class="answer">
@@ -284,7 +286,7 @@
                         <p>
                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit?
                         </p>
-                        <img src="./assets/icons/Plus.svg" alt="sinal de Mais">
+                        <img src="./assets/icons/Plus.svg" alt="sinal de Mais" onclick="toggleAnswer(this)">
                     </div>
 
                     <div class="answer">
@@ -302,7 +304,7 @@
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit?
                         </p>
-                        <img src="./assets/icons/Plus.svg" alt="sinal de Mais">
+                        <img src="./assets/icons/Plus.svg" alt="sinal de Mais" onclick="toggleAnswer(this)" class="toggleIcon">
                     </div>
 
                     <div class="answer">
@@ -320,7 +322,7 @@
                         <p>
                             Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet?
                         </p>
-                        <img src="./assets/icons/Plus.svg" alt="sinal de Mais">
+                        <img src="./assets/icons/Plus.svg" alt="sinal de Mais" onclick="toggleAnswer(this)">
                     </div>
 
                     <div class="answer">
@@ -338,7 +340,7 @@
                         <p>
                             Ut enim ad minima veniam, quis nostrum exercitationem ullam?
                         </p>
-                        <img src="./assets/icons/Plus.svg" alt="sinal de Mais">
+                        <img src="./assets/icons/Plus.svg" alt="sinal de Mais" onclick="toggleAnswer(this)">
                     </div>
 
                     <div class="answer">
@@ -356,7 +358,7 @@
                         <p>
                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit?
                         </p>
-                        <img src="./assets/icons/Plus.svg" alt="sinal de Mais">
+                        <img src="./assets/icons/Plus.svg" alt="sinal de Mais" onclick="toggleAnswer(this)">
                     </div>
 
                     <div class="answer">
@@ -374,7 +376,7 @@
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit?
                         </p>
-                        <img src="./assets/icons/Plus.svg" alt="sinal de Mais">
+                        <img src="./assets/icons/Plus.svg" alt="sinal de Mais" onclick="toggleAnswer(this)">
                     </div>
 
                     <div class="answer">
@@ -529,7 +531,7 @@
     </section>
 
     <section class="CTA">
-        <div class="wrapper">
+        
             <header>
                 <h1>
                     Monitore seu site como um profissional.
@@ -551,7 +553,7 @@
                 </button>
     
             </div>
-        </div>
+        
 
     </section>
 
@@ -565,26 +567,126 @@
             <div class="footer_menu">
                 <div class="footer_menu_itens">
                     <span>Features</span>
-                    <img src="./assets/icons/Chevron-Down.svg" alt="seta para baixo">
+
+                    <button onclick="clickArrow(this)">
+                        <img src="./assets/icons/Chevron-Down.svg" alt="seta para baixo">
+                    </button>
+                    
+                    
+                    
+                </div>
+
+                <div class="footer_menu_itens_show">
+                    <a href="#">Crescimento</a>
+                    <a href="#">Vendas</a>
+                    <a href="#">Chat</a>
                 </div>
 
                 <div class="footer_menu_itens">
                     <span>Preços</span>
-                    <img src="./assets/icons/Chevron-Down.svg" alt="seta para baixo">
+
+                    <button onclick="clickArrow(this)">
+                        <img src="./assets/icons/Chevron-Down.svg" alt="seta para baixo">
+                    </button>
+
+                </div>
+
+                <div class="footer_menu_itens_show">
+                    <a href="#">Teste Grátis</a>
+                    <a href="#">Padrão</a>
+                    <a href="#">Business</a>
                 </div>
 
                 <div class="footer_menu_itens">
-                    <span>Empresas</span>
-                    <img src="./assets/icons/Chevron-Down.svg" alt="seta para baixo">
+                    <span>Enterprise</span>
+
+                    <button onclick="clickArrow(this)">
+                        <img src="./assets/icons/Chevron-Down.svg" alt="seta para baixo">
+                    </button>
+                    
+                </div>
+
+                <div class="footer_menu_itens_show">
+                    <a href="#">Customizado</a>
+                    <a href="#">Automação</a>
+                    <a href="#">Invoicing</a>
+                    <a href="#">Suporte 24/7</a>
                 </div>
 
                 <div class="footer_menu_itens">
                     <span>Carreiras</span>
-                    <img src="./assets/icons/Chevron-Down.svg" alt="seta para baixo">
+
+                    <button onclick="clickArrow(this)">
+                        <img src="./assets/icons/Chevron-Down.svg" alt="seta para baixo">
+                    </button>
+                    
                 </div>
+
+                <div class="footer_menu_itens_show">
+                    <a href="#">Vagas Abertas</a>
+                    <a href="#">Estagios</a>
+                    <a href="#">Contratos</a>
+                    <a href="#">Contato</a>
+                </div>
+
             </div>
         </div>
 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <div class="copyrightAndSocials">
             <span>
                 © Copyright 2024. monitore seu site. Todos os direitos reservados.
@@ -603,4 +705,7 @@
     
 
 </body>
+
+
+
 </html>
