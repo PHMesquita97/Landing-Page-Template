@@ -1,5 +1,379 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
+    :root {
+        font-size: 62.5%;
+        /* 1rem = 10px */
     
+        --text-color-titles: hsl(204, 25%, 12%);
+        --text-color-content: hsl(212, 26%, 29%);
+        --features-text-titles: hsl(209, 100%, 50%);
+        --features-text-content: hsl(204, 25%, 12%);
+    
+        --bg-color: hsl(270, 15%, 90%);
+        --bg-card-color: hsl(245, 100%, 98%);
+    }
+
+    body{
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    nav{
+        display: flex;
+        padding: 2.4rem 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu_burger a{
+        text-decoration: none;
+        color: var(--text-color-content);
+        margin-right: 5.6rem;
+    }
+
+    .menu_burger a:hover{
+        text-decoration: underline;
+        text-shadow: 1px 1px 20px grey;
+    }
+
+    nav .menu {
+        display: none;
+    }
+
+    nav .login{
+        position: relative;
+    }
+
+    /* ========== hero ========== */
+    .hero{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.4rem;
+
+    }
+
+    .hero header {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        
+        width: 52.6rem;
+        margin-top: 4.4rem;   
+    }
+
+    .hero .logos {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5rem;
+        
+    }
+
+    .hero .logos .companies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: stretch;
+        align-items: center;
+        align-content: center;
+        gap: 0.4rem 1rem;
+    }
+ /* ========== features ========== */
+    .features{
+        margin: auto;
+        padding: 4rem;
+        
+            min-width: 768px;
+        max-width: 1280px;
+    }
+ /* ========== feature ONE ========== */
+    .features .featureone{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* três colunas na versão desktop */
+        grid-template-rows: auto auto auto; /* Três linhas para organizar os elementos */
+    }
+
+    .desktopImg {
+        grid-row: 1 / span 3; 
+        /* Expande a imagem por três linhas na versão desktop */
+
+        /* Exibe a imagem na terceira coluna 
+        grid-column: 3; 
+        */
+
+    }
+
+    header {
+        grid-row: 1; 
+        /* Exibe o cabeçalho na primeira linha */
+        grid-column: 1; 
+        /* Exibe o cabeçalho na primeira coluna */
+    }
+
+    p {
+        grid-row: 2; 
+        /* Exibe o parágrafo na segunda linha */
+        grid-column: 1; 
+        /* Exibe o parágrafo na primeira coluna */
+    }
+
+    ul {
+        grid-row: 3; 
+        /* Exibe a lista na terceira linha */
+        grid-column: 1; 
+        /* Exibe a lista na primeira coluna */
+    }
+
+    .learnMore {
+        grid-row: 4; 
+        /* Exibe o botão na quarta linha */
+        grid-column: 1; 
+        /* Exibe o botão na primeira coluna */
+    }
+ /* ========== feature TWO ========== */
+    .features .featureTwo{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .features .featureTwo .customerSupportIMG{
+        grid-row: 1 / span 3;
+        
+    }
+ /* ========== feature Three ========== */
+    .features .featureThree{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .features .featureThree .growthMonitorIMG{
+        grid-row: 1 / span 3;
+    }
+
+    .features .featureThree .statistics{
+        grid-row: 3;
+    }
+
+ /* ========== TESTIMONIALS ========== */   
+    .testimonials {
+        width: 100%;
+    }
+
+    .testimonials header{
+        width: 100%;
+    }
+
+ /* ========== FAQs ========== */
+ 
+ .FAQs{
+    display: flex;
+    flex-direction: row;
+    
+    /*padding: 12rem 8rem 6rem 8rem;*/
+    align-items: flex-start;
+    gap: 2.4rem;
+
+    width: 96%;
+ }
+
+ .FAQs header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    width: 51.9rem;
+    padding: 3.2rem 5.6rem 3.2rem 0rem;
+    gap: 1.6rem;
+ }
+
+ .FAQs header h1{
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 2.4rem; 
+ }
+
+ .FAQs header h2{
+    font-size: 4.2rem;
+    line-height: 5.8rem; 
+    align-self: stretch;
+ }
+
+ .FAQs header p{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-align: justify;
+ }
+
+ 
+ .FAQs .questions{
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+ }
+
+ .FAQs .questions .Qcard_open{
+    border-radius: 0.8rem;
+    background: #E3F1FF;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 2.4rem;
+    align-items: flex-start;
+    gap: 1.6rem;
+    
+ }
+
+ .FAQs .questions .Qcard_close{
+    border-radius: 0.8rem;
+    background: #E3F1FF;
+
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+    align-items: flex-start;
+    gap: 1.6rem;
+
+    margin-top: 1.6rem;
+ }
+
+ .FAQs .question{
+    color: #172026;
+
+    display: flex;
+
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem;
+
+    gap: 15rem;
+ }
+
+ .FAQs .answer{
+    font-family: Inter;
+    font-size: 1.8rem;
+    line-height: 2.8rem; 
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

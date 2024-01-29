@@ -23,13 +23,13 @@
             <img src="./assets/icons/Logo.svg" alt="logo da página">
         </div>
 
-        <div id="burger" class="menu_burger">
-            <ul>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Planos</a></li>
-                <li><a href="#">Enterprise</a></li>
-                <li><a href="#">Carreiras</a></li>
-            </ul>
+        <div id="burger">
+            <div class="menu_burger">
+                <a href="#">Features</a>
+                <a href="#">Planos</a>
+                <a href="#">Enterprise</a>
+                <a href="#">Carreiras</a>
+            </div>
         </div>
 
         <div class="login">
@@ -61,7 +61,7 @@
         </div>
 
         <div class="image">
-            <img src="./assets/images/Image.png" alt="">
+            <img src="./assets/images/hero-desktop.png" alt="imagem do app em versão desktop e mobile">
         </div>
 
         <div class="logos">
@@ -115,24 +115,28 @@
         </div>
 
         <div class="featureTwo">
+        
             <header>
                 <h3>
                     Suporte ao Consumidor
                 </h3>
-
+            
                 <h2>
                     Entre em contato com seus Clientes
                 </h2>
             </header>
-
+            
+            
+            
             <div class="customerSupportIMG">
                 <img src="./assets/images/Image-featureTwo.png" alt="imagem da tela de suporte ao Consumidor">
             </div>
-
+            
+            
             <p>
                 Fique por dentro de tudo e renove seu processo de trabalho com nosso recurso revolucionário. Obtenha uma visão panorâmica com nosso painel personalizável.
             </p>
-
+            
             <ul>
                 <li>
                     <img src="./assets/icons/check 1.svg" alt="sibolo de check">Lorem ipsum dolor sit amet
@@ -143,14 +147,14 @@
                 </li>
                 <li>
                     <img src="./assets/icons/check 1.svg" alt="sibolo de check">
-                    Sed do eiusmod tempor incididunt ut labore 
+                    Sed do eiusmod tempor incididunt ut labore
                 </li>
             </ul>
-
-            <button class="learnMore" >
+            
+            <button class="learnMore">
                 Saiba Mais <img src="./assets/icons/Arrow.svg" alt="">
             </button>
-
+            
         </div>
         
         <div class="featureThree">
@@ -192,7 +196,8 @@
         </div>
         
     </section>
-    
+   
+     
     <section class="testimonials">
         <header>
             <h1>
@@ -218,13 +223,33 @@
 
                     <img src="./assets/icons/App Store.png" alt="icone da App Store">
                 </header>
+                
+                <div class="description">
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet? Ut enim ad minima veniam, quis nostrum exercitationem ullam.
+                </div>
+            </div>
+
+            <div class="testimonials_card">
+                <header>
+                    <img class="profile"  src="./assets/images/5ab1fb3f8707d4b43d1bbc10c1af9597.png" alt="Homem de terno">
+                    
+                    <div class="nameAndComp">
+                        <h1>Grant Styles</h1>
+                    <h2>
+                        CEO of Biffico Enterprise Ltda.
+                    </h2>
+                    </div>
+
+                    <img src="./assets/icons/App Store.png" alt="icone da App Store">
+                </header>
+                
                 <div class="description">
                     Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet? Ut enim ad minima veniam, quis nostrum exercitationem ullam.
                 </div>
             </div>
         </div>
     </section>
-
+    
     <section class="FAQs">
         <header>
             <h1>Perguntas Frequentes</h1>
@@ -233,6 +258,7 @@
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam exercitationem pariatur, facere iste magni delectus
             </p>
         </header>
+        
         <div class="questions">
             <div class="Qcards">
 
@@ -574,15 +600,7 @@
         </div>
     </footer>
 
-    <script>
-        function clickMenu() {
-    if (burger.style.display == 'block') {
-        burger.style.display = 'none'
-    } else {
-        burger.style.display = "block"
-    }
-}
-    </script>
+    
 
 </body>
 </html>
