@@ -1,13 +1,14 @@
-function clickMenu() {
-    if (burger.style.display == 'block') {
-        burger.style.display = 'none'
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+
+    if (menu.style.left === "0px") {
+        menu.style.left = "-500px"; // Fecha o menu
     } else {
-        burger.style.display = "block"
+        menu.style.left = "0px"; // Abre o menu
     }
 }
 
 function clickArrow(button) {
-    // Encontre o elemento irmão com a classe 'footer_menu_itens_show' do botão clicado
     var menuToShow = button.parentNode.nextElementSibling;
 
     if (window.getComputedStyle(menuToShow).display === 'flex') {

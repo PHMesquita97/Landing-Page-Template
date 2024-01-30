@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
     
     <title>Landin Page Tamplate</title>
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="media-query.css">
 
@@ -25,23 +26,31 @@
             <img src="./assets/icons/Logo.svg" alt="logo da página">
         </div>
 
-        <div id="burger">
-            <div class="menu_burger">
-                <a href="#">Features</a>
-                <a href="#">Planos</a>
-                <a href="#">Enterprise</a>
-                <a href="#">Carreiras</a>
+        <div class="sliding-menu-container">
+            
+            <div id="menu" class="menu-content">
+                <!-- Seu conteúdo do menu aqui -->
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Planos</a></li>
+                    <li><a href="#">Enterprise</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                </ul>
+            </div>
+
+            <div class="signInPlusMenu">
+                <a class="openAccount" href="http://" target="_blank" rel="noopener noreferrer">Abra sua conta</a>
+                
+                <img src="./assets/icons/User.svg" alt="logo de usuárion">
+                
+                <a class="signIn" href="http://" target="_blank" rel="noopener noreferrer">Entrar</a>
+            </div>
+
+            <div>
+                <button id="toggle-menu" onclick="toggleMenu()"><img src="./assets/icons/Menu.svg" alt="logo de Menu"></button>
+                
             </div>
         </div>
-
-        <div class="login">
-            <img src="./assets/icons/User.svg" alt="logo de usuárion">
-        </div>
-
-        <div class="menu" onclick="clickMenu()" >
-            <img src="./assets/icons/Menu.svg" alt="logo de Menu">
-        </div>
-
     </nav>
 
     

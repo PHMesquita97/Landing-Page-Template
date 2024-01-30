@@ -33,48 +33,71 @@ body {
 /* ==========navigation=========== */
 nav {
     display: flex;
-    /*max-width: 76rem;*/
+    max-width: 100%;
+    margin: auto;
     padding: 1.6rem 2rem;
     justify-content: space-between;
     align-items: center;
 }
 
-nav .home-logo {
-    cursor: pointer;
+nav .openAccount, .signIn{
+    display: none;
+    }
+
+.sliding-menu-container{
+    display: flex;    
+    padding: 1.6rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    gap:2rem
 }
 
-nav .login {
-    position: fixed;
-    right: 60px;
-    cursor: pointer;
+#menu {
+    position: absolute;
+    top: 0;
+    left: -250px; /* Inicialmente oculto fora da tela */
+    width: 250px;
+    height: 137.5%;
+    background-color: hsl(210, 100%, 95%);
+    padding: 20px;
+    transition:  0.3s ease;
 }
 
-nav .menu {
-    cursor: pointer;
-
+#menu ul {
+    list-style: none;
+    padding: 0;
 }
 
-nav .menu:hover {
-    transform: scale(1.3);
-    transition: 200ms;
+#menu li {
+    margin-bottom: 1rem;
 }
 
+#menu li a{
+    color: var(--text-color-content);
+    text-decoration: none;
+    
+}
 
+#menu li a:hover{
+    text-decoration: underline;
+    text-shadow: 0px 0px 20px var(--text-color-content);
+}
 
+#toggle-menu {
+    background: transparent;   
+}
 
 /* ========== hero ==========*/
 .hero {
-    /*max-width: 76rem;*/
     display: flex;
     flex-direction: column;
     align-items: center;
 
-
     background-image: linear-gradient(0deg,
-            #50CFFA 0%,
-            #738FF2 5%,
-            #F42A9A 30%,
-            #FDE7F3 55%);
+    #50CFFA 0%,
+    #738FF2 5%,
+    #F42A9A 30%,
+    #FDE7F3 55%);
 }
 
 header {
@@ -191,21 +214,17 @@ button:hover {
 /*========== features ========== */
 .features {
     display: flex;
-    padding-top: 5.6rem;
+    padding-top: 5.6rem ;
     flex-direction: column;
     align-items: center;
     gap: 5.6rem;
-    
-    width: 35rem;
-    margin: auto;
-    
 
 }
 
-.features .featureone {
+.features .featureone, .featureTwo, .featureThree {
     display: flex;
+    width: 35rem;
     flex-direction: column;
-    /* width: 35rem; */
     align-items: flex-start;
     gap: 2.4rem;
 }
@@ -272,14 +291,6 @@ button:hover {
     background-color: none;
 }
 
-.features .featureTwo {
-    display: flex;
-    /* width: 35rem; */
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2.4rem;
-}
-
 .features .featureTwo header {
     display: flex;
     flex-direction: column;
@@ -334,14 +345,6 @@ button:hover {
     background-color: none;
 
     color: #00A424;
-}
-
-.features .featureThree {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /* width: 35rem; */
-    gap: 2.4rem;
 }
 
 .features .featureThree header {
