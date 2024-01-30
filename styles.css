@@ -16,6 +16,8 @@
     --bg-color: hsl(270, 15%, 90%);
     --bg-card-color: hsl(210, 100%, 95%);
 
+    --bg:hsla(327, 85%, 95%, 1);
+
 
 }
 
@@ -26,7 +28,7 @@ body {
 
     min-width: 370px;
 
-    background-color: var(--bg-color);
+    background-color: var(--bg);
 
 }
 
@@ -35,7 +37,7 @@ nav {
     display: flex;
     max-width: 100%;
     margin: auto;
-    padding: 1.6rem 2rem;
+    padding: 1.6rem .5rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -46,7 +48,7 @@ nav .openAccount, .signIn{
 
 .sliding-menu-container{
     display: flex;    
-    padding: 1.6rem 2rem;
+    padding: 1.6rem 0;
     justify-content: space-between;
     align-items: center;
     gap:2rem
@@ -66,6 +68,7 @@ nav .openAccount, .signIn{
 #menu ul {
     list-style: none;
     padding: 0;
+    margin-top: 10rem;
 }
 
 #menu li {
@@ -288,7 +291,7 @@ button:hover {
     align-items: center;
     gap: 1.2rem;
     color: var(--features-text-titles);
-    background-color: none;
+    background-color: transparent;
 }
 
 .features .featureTwo header {
@@ -342,7 +345,7 @@ button:hover {
     align-items: center;
     gap: 1.2rem;
     color: var(--features-text-titles);
-    background-color: none;
+    background-color: transparent;
 
     color: #00A424;
 }
@@ -453,7 +456,7 @@ button:hover {
     align-items: center;
     gap: 1.2rem;
     color: var(--features-text-titles);
-    background-color: none;
+    background-color: transparent;
 
     color: hsla(328, 83%, 54%, 1);
 }
@@ -513,7 +516,8 @@ button:hover {
     gap: 1.6rem;
 
     border-radius: 1.6rem;
-    background: #FFF;
+    background: var(--bg-card-color);
+    border: solid 0.5px hsla(0, 0%, 50%, 0.100);
 }
 
 .testimonials .testimonials_cards .testimonials_card header {
@@ -612,6 +616,7 @@ button:hover {
     border-radius: 0.8rem;
     background: var(--bg-card-color);
     margin-top: 1rem;
+    border: solid 0.5px hsla(0, 0%, 50%, 0.100);
 }
 
 .FAQs .Qcard_open{
@@ -624,6 +629,7 @@ button:hover {
 
 .FAQs .Qcard_close{
     display: flex;
+    flex-direction: column;    
     padding: 1.6rem;
     justify-content: center;
     align-items: center;
@@ -805,6 +811,7 @@ button:hover {
 
 .Plans .Plans_prices .freeTrial, .enterprise{
     background-color: var(--bg-card-color);
+    border: solid 0.5px hsla(0, 0%, 50%, 0.100);
 }
 
 .Plans .Plans_prices .starTrial,
